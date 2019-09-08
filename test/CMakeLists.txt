@@ -2,6 +2,8 @@ include_directories(${CMAKE_SOURCE_DIR}/third-party/googletest/googletest/includ
 
 add_executable(test_deflate deflate.cpp)
 target_link_libraries(test_deflate gtest_main)
+add_executable(test_png png.cpp)
+target_link_libraries(test_png gtest_main)
 add_executable(test_bmp bmp.cpp)
 target_link_libraries(test_bmp gtest_main)
 add_executable(test_zlib zlib.cpp)
